@@ -15,7 +15,7 @@ A simple and elegant Streamlit app that converts PDF files into editable Word do
 - python-docx for Word document creation
 
 ## How to Run
-1. Clone this repository.
+1. USe this repository.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
