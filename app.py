@@ -4,7 +4,7 @@ from docx import Document
 import io
 
 st.title("PDF to WORD Convertor")
-st.write("Upload your PDF here")  # Fixed the typo from "PFD" to "PDF"
+st.write("Upload your PDF here")  
 
 uploaded_file = st.file_uploader("Choose a file", type=["pdf"])
 
@@ -18,7 +18,7 @@ if uploaded_file is not None:
     for page_num in range(len(pdf.pages)):
         page = pdf.pages[page_num]
         text = page.extract_text()
-        if text:  # Safety check in case page is empty
+        if text:  
             doc.add_paragraph(text)
 
     word_io = io.BytesIO()
